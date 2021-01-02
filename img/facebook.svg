@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-iPhone_XR_XS_Max_11_2">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_XR_XS_Max_11_2" data-name="iPhone XR, XS Max, 11 – 2" clip-path="url(#clip-iPhone_XR_XS_Max_11_2)">
+    <rect width="33" height="33" fill="#fff"/>
+    <path id="facebook" d="M28.555,0H4.449A4.447,4.447,0,0,0,0,4.447V28.553A4.447,4.447,0,0,0,4.449,33H16.338l.02-11.792H13.295a.723.723,0,0,1-.723-.72l-.015-3.8a.723.723,0,0,1,.723-.726h3.058V12.288c0-4.262,2.6-6.583,6.406-6.583h3.12a.723.723,0,0,1,.723.723V9.633a.723.723,0,0,1-.723.723H23.949c-2.068,0-2.468.983-2.468,2.425v3.18h4.544a.723.723,0,0,1,.718.808l-.451,3.8a.723.723,0,0,1-.718.638H21.5L21.481,33h7.074A4.447,4.447,0,0,0,33,28.554V4.447A4.447,4.447,0,0,0,28.555,0Z" transform="translate(-0.002 0.284)" fill="#475993"/>
+  </g>
+</svg>

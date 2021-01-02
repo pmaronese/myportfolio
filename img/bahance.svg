@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-iPhone_XR_XS_Max_11_1">
+      <rect width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_XR_XS_Max_11_1" data-name="iPhone XR, XS Max, 11 – 1" clip-path="url(#clip-iPhone_XR_XS_Max_11_1)">
+    <rect width="33" height="33" fill="#fff"/>
+    <g id="behance" transform="translate(0 0)">
+      <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="16.5" cy="16.5" r="16.5" transform="translate(0 0)" fill="#4176fa"/>
+      </g>
+      <g id="Group_2" data-name="Group 2" transform="translate(6.738 10.467)">
+        <path id="Path_1" data-name="Path 1" d="M38.587,38.75c-4.766,0-4.772,4.748-4.772,4.772a4.411,4.411,0,0,0,4.772,4.754s4.252.242,4.252-3.308H40.655s.072,1.336-2,1.336a2.019,2.019,0,0,1-2.183-2.159h6.435S43.619,38.75,38.587,38.75Zm-2.135,3.732a2.217,2.217,0,0,1,2.184-1.911,1.841,1.841,0,0,1,1.893,1.911ZM31,41.26A2.154,2.154,0,0,0,32.89,38.9c0-2.219-1.548-3.308-3.514-3.308H22.91V48.016h6.465s3.95.121,3.95-3.671C33.325,44.345,33.494,41.26,31,41.26Zm-5.238-3.466h3.617s.877,0,.877,1.294-.514,1.482-1.1,1.482H25.759Zm3.435,8.014H25.759V42.482h3.617s1.313-.012,1.307,1.711C30.682,45.645,29.708,45.8,29.194,45.808Zm6.719-9.489v1.53h5.129v-1.53Z" transform="translate(-22.91 -35.587)" fill="#f1f2f2"/>
+      </g>
+    </g>
+  </g>
+</svg>
