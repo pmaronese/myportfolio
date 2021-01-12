@@ -1,33 +1,43 @@
 /*
 Colors used:
-Primary Color (Gray - background): #000000;
+Primary Color (Gray - background): #fafafa;
 Secondary Color (Turquese): #93CBC3;
 white: #FFFFFF
 black: #000000
 */
+  {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans';
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 400;
-  /* Sets the font weight to 300 */
   line-height: 1.4;
-  /* Sets the line-height to 1  * the font-size */
   color: #000000;
+  margin: auto;
 }
 
 header {
-  background-color: #F3F3F3;
+  background-color: #fafafa;
   padding: 10px 0;
-  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: center;
   width: 100%;
 }
 
 main {
-  padding-top: 70px;
+  padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  padding-top: 133px;
+  padding: 10px 0;
 }
 
 h1,
@@ -39,7 +49,7 @@ h4 {
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
   font-weight: 700;
 }
 
@@ -59,6 +69,7 @@ h4 {
 }
 
 img {
+  position: center;
   width: 100%;
 }
 
@@ -75,26 +86,24 @@ a {
 }
 
 a:visited {
-  /* visited link */
-  color: #93CBC3;
+  color: ##ea8824;
 }
 
 a:hover,
-a:focus
- {
+a:focus {
   color: #93CBC3;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
-  /* selected link */
   color: ##93CBC3;
 }
 
-
 .logo {
-  max-width: 50px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -112,6 +121,72 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.mainbutton {
+  width: 250px;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  padding-top: 90px;
+  color: #93CBC3;
+  /***** I them to be in the exact middle both - web & phone **********************************************/
+}
+
+.icon {
+  display: inline-block;
+  width: 3em;
+  text-align: center;
+  padding: 15px;
+  /***** I WANT TO MAKE IT BIGGER**********************************************/
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.profile {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero h1 {
+  text-align: center center;
+  background-color: #fafafa
+}
+
+#work {
+  padding-top: 15px;
+}
+
+#footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
