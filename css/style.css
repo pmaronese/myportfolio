@@ -29,7 +29,7 @@ header {
 }
 
 main {
-  padding-top: 96px;
+  padding-top: 185px;
 }
 
 footer {
@@ -141,6 +141,14 @@ a:active {
   margin: 25px 0;
 }
 
+.story {
+  display: flex;
+}
+
+.story .column:last-child {
+  align-items: center;
+  display: flex;
+}
 .row::after {
   content: "";
   clear: both;
@@ -272,6 +280,12 @@ nav>ul>li>a:visited {
 #hero p {
   animation-name: fadeIn;
   animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+}
+
+#work {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
 
