@@ -141,10 +141,6 @@ a:active {
   margin: 25px 0;
 }
 
-.story {
-  display: flex;
-}
-
 .story .column:last-child {
   align-items: center;
   display: flex;
@@ -337,7 +333,9 @@ width: 33.33%;
     float: left;
     padding: 10px;
   }
-
+  .story {
+    display: flex;
+  }
 }
 
 /* ==============================
