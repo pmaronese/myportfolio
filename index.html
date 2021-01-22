@@ -20,15 +20,18 @@
   <!--Header-->
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><img src="img/logopm.png" class="logo"></a>
       <nav>
         <ul>
         <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+      </div>
   </header>
   <!--End Header-->
 
@@ -1082,14 +1085,14 @@
           <a href="https://www.linkedin.com/in/paula-maronese/" target="_blank"> <i class="icon fab fa-linkedin"></i></a>
           <a href="https://www.facebook.com/Pau.maronese/" target="_blank"> <i class="icon fab fa-facebook-square"></i></a>
           <a href="https://www.behance.net/paulamaronese" target="_blank"><i class="icon fab fa-behance-square"></i></a>
-        </div>
+                  </div>
 
         <p>Copyright Maronese Paula 2020</p>
       </div>
   </footer>
   <!--End Footer-->
-
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

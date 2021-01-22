@@ -19,13 +19,12 @@ body {
 
 header {
   background-color: #fafafa;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
-  text-align: center;
 }
 
 main {
@@ -188,10 +187,10 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
-  display: inline-block;
   margin: 0 5px;
 
 }
@@ -210,6 +209,33 @@ nav a:focus{
 
 nav>ul>li>a:visited {
   color: #4a4a4a;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
 
 /*START BERLIN ANIMATION =========================================*/
@@ -320,6 +346,7 @@ Medium devices (640px and larger)
 
   .logo {
     padding-bottom: 0
+    min-width: 641px
   }
 
 .col-md-4 {
@@ -336,6 +363,17 @@ width: 33.33%;
   .story {
     display: flex;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
 }
 
 /* ==============================
