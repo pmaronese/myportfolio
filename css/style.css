@@ -144,6 +144,7 @@ a:active {
   align-items: center;
   display: flex;
 }
+
 .row::after {
   content: "";
   clear: both;
@@ -192,7 +193,6 @@ nav>ul {
 
 nav>ul>li {
   margin: 0 5px;
-
 }
 
 nav a {
@@ -202,8 +202,8 @@ nav a {
   font-weight: 700;
   color: #4a4a4a;
 }
-nav a:hover
-nav a:focus{
+
+nav a:hover nav a:focus {
   text-decoration: none;
 }
 
@@ -228,10 +228,10 @@ nav>ul>li>a:visited {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive nav {
@@ -345,13 +345,13 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    padding-bottom: 0
-    min-width: 641px
+    padding-bottom: 0 min-width: 641px
   }
 
-.col-md-4 {
-width: 33.33%;
-}
+  .col-md-4 {
+    width: 33.33%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -360,20 +360,22 @@ width: 33.33%;
     float: left;
     padding: 10px;
   }
+
   .story {
     display: flex;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==============================

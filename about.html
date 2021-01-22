@@ -20,12 +20,13 @@
   <!--Header-->
   <header>
     <div class="container">
-        <a href="index.html"><img src="img/logopm.png" class="logo"></a>
+      <a href="index.html"><img src="img/logopm.png" class="logo"></a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -42,7 +43,7 @@
     <div class="section">
       <div class="container">
         <div class="row story">
-                    <div class="column col-md-6">
+          <div class="column col-md-6">
             <h2>My Story</h2>
             <p>
               Hello! I'm an Industrial Designer and UX / UI. My passion is coming up with creative ways to express a message, and providing solutions for complex tasks. I'm a huge fan of technology and discovering new programs that help us to make
@@ -104,6 +105,7 @@
   <!--Footer-->
   <footer>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <h2>Get in Touch</h2>
       <p>
         Did you like my work and do you want to contact me? Please do so through:
