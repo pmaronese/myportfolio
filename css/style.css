@@ -112,12 +112,30 @@ a:active {
   transition: 0.2s solid #EA8824;
   text-transform: uppercase;
   transition-duration: 0.2s;
-  opacity;
+}
+a.active {
+  font-weight: 700;
+}
+.button.emailme {
+  border: 3px solid #93CBC3;
+  color: #93CBC3;
+  }
+
+.button.emailme:hover {
+  border: 3px solid #EA8824;
+  color: #EA8824;
 }
 
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+}
+
+.home {
+  background-image: url("../img/vidar-nordli-mathisen-QkBrfIhv77Y-unsplash.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .icon {
@@ -199,7 +217,7 @@ nav a {
   text-decoration: none;
   padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #4a4a4a;
 }
 
@@ -337,8 +355,18 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
   }
+main  {
+  padding-top: 113px;
+    }
+    .navtoggle.responsive nav {
+      padding: 0;
+    }
+    .navtoggle.responsive li {
+          border-top: none;
+          padding: 0;
+      }
 
-  nav {
+      nav {
     width: auto;
     float: right;
     margin-top: 4px;
