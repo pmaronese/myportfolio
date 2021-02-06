@@ -14,22 +14,16 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
-  color: #000000;
-}
+  }
 
 header {
   background-color: #000000;
   padding: 10px 0 0px;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgb(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
-  width: 100%;
-  position: fixed;
-  }
-
-main {
-  padding-top: 185px;
 }
+
 
 footer {
   text-align: center;
@@ -50,8 +44,6 @@ h1 {
   font-weight: 700;
   text-align: center;
   color: #FFFFFF
-
-
 }
 
 h2 {
@@ -70,6 +62,8 @@ h4 {
   font-size: 1.10em;
   font-weight: 400;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 h5 {
@@ -77,6 +71,7 @@ h5 {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  margin-top: 0;
 }
 
 img {
@@ -117,22 +112,24 @@ a:active {
 .button {
   display: inline-block;
   color: #EA8824;
-  background-color: #00000;
+  background-color: #FFFFFF;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s solid #EA8824;
+    transition: 0.3s;
   text-transform: uppercase;
   transition-duration: 0.2s;
 }
+
 a.active {
   font-weight: 700;
 }
+
 .button.emailme {
   border: 3px solid #93CBC3;
   color: #93CBC3;
-  }
+}
 
 .button.emailme:hover {
   border: 3px solid #EA8824;
@@ -145,18 +142,18 @@ a.active {
 }
 
 .home {
-background-image: url("../img/background/backgroundindex.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url("../img/background/backgroundindex.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .icon {
   display: inline-block;
   text-align: left;
   padding: 10px;
-  padding-top: 35px;
-  font-size: 3em
+  font-size: 3em;
 }
 
 /* Layout styling */
@@ -164,10 +161,15 @@ background-position: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  padding: 0 15px;
 }
 
 .row {
   margin: 25px 0;
+}
+
+#heart {
+  padding-top: 30px;
 }
 
 .story .column:last-child {
@@ -190,11 +192,15 @@ background-position: center;
 
 #hero h1 {
   text-align: center;
+  margin-bottom: 0;
+  }
+.home h1 {
+  line-height: 1.2;
 }
 
 #hero p {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 #hero span {
@@ -252,7 +258,7 @@ nav>ul>li>a:visited {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 2px;
   font-size: 20px;
   padding-right: 0;
@@ -271,15 +277,15 @@ nav>ul>li>a:visited {
 /*START BERLIN ANIMATION =========================================*/
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    color: #edc655;
   }
 
   50% {
-    fill: #fcffad;
+    color: #fcffad;
   }
 
   100% {
-    fill: #f76414;
+    color: #f76414;
   }
 }
 
@@ -328,6 +334,11 @@ nav>ul>li>a:visited {
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
+#hero h5 {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
 
 #hero p {
   animation-name: fadeIn;
@@ -340,6 +351,7 @@ nav>ul>li>a:visited {
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -366,27 +378,38 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-  padding: 0px;
-}
-main  {
-  padding-top: 113px;
+    padding: 0 0 200px;
     }
-    .navtoggle.responsive nav {
-      padding: 0;
-    }
-    .navtoggle.responsive li {
-          border-top: none;
-          padding: 0;
-      }
 
-      nav {
+    works {
+      text-align: unset;
+
+      }
+    .home {
+      max-width: 80%;
+    margin: -150px auto 0;}
+
+.reverse [class*="col-"] {
+  float: right;
+}
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    border-top: none;
+    padding: 0;
+  }
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
   .logo {
-    padding-bottom: 0 min-width: 641px
+    padding-bottom: 0;
   }
 
   .col-md-4 {
