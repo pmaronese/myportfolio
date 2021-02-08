@@ -172,6 +172,10 @@ a.active {
   padding-top: 30px;
 }
 
+#gifs {
+  width: 100%;
+  border-radius: 10px;
+}
 .story .column:last-child {
   align-items: center;
   display: flex;
@@ -194,6 +198,7 @@ a.active {
   text-align: center;
   margin-bottom: 0;
   }
+
 .home h1 {
   line-height: 1.2;
 }
@@ -334,6 +339,13 @@ nav>ul>li>a:visited {
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
+
+#hero  {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+
 #hero h5 {
   animation-name: fadeIn;
   animation-duration: 0.6s;
@@ -353,6 +365,7 @@ nav>ul>li>a:visited {
 }
 
 
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -364,6 +377,7 @@ nav>ul>li>a:visited {
     transform: translateY(0px);
   }
 }
+
 
 /*END HERO ANIMATION*=================================/
 
