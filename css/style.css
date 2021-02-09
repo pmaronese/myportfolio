@@ -146,6 +146,8 @@ a.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 27px;
+
 }
 
 
@@ -169,7 +171,7 @@ a.active {
 }
 
 #heart {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 #gifs {
