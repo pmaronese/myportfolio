@@ -14,7 +14,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
-}
+  }
 
 header {
   background-color: #000000;
@@ -24,10 +24,18 @@ header {
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
+#skills {
+  text-align: center;
+  padding-top: 133px;
+  padding: 10px 0;
+  background-color: #c9c9c9;
+}
+
 footer {
   text-align: center;
   padding-top: 133px;
   padding: 10px 0;
+  background-color: #000000;
 }
 
 h1,
@@ -46,15 +54,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.0em;
+  font-weight: 400;
   text-align: center;
-  color: #000000
+  color: #FFFFFF;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
 h4 {
@@ -70,6 +78,14 @@ h5 {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  margin-top: 0;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
   margin-top: 0;
 }
 
@@ -110,13 +126,13 @@ a:active {
 
 .button {
   display: inline-block;
-  color: #EA8824;
+  color: #B26211;
   background-color: #FFFFFF;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
-  transition: 0.3s;
+    border: 3px solid #93CBC3;
+    transition: 0.3s;
   text-transform: uppercase;
   transition-duration: 0.2s;
 }
@@ -128,6 +144,8 @@ a.active {
 .button.emailme {
   border: 3px solid #93CBC3;
   color: #93CBC3;
+  margin: 15px 0;
+background-color: inherit;
 }
 
 .button.emailme:hover {
@@ -145,7 +163,10 @@ a.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-size:20px
 }
+
+
 
 .icon {
   display: inline-block;
@@ -191,10 +212,11 @@ a.active {
 #hero h1 {
   text-align: center;
   margin-bottom: 0;
-}
+  }
 
 .home h1 {
-  line-height: 1.2;
+  line-height: 1.2
+  font-size: 120px;;
 }
 
 #hero p {
@@ -208,8 +230,13 @@ a.active {
 }
 
 #work {
-  padding-top: 15px;
+  padding-top: 50px;
 }
+
+#work h4 {
+  padding-top: 10px;
+  }
+
 
 #footer {
   padding-top: 15px;
@@ -235,7 +262,7 @@ nav a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #4a4a4a;
+  color: #8a8a8a;
 }
 
 nav a:hover nav a:focus {
@@ -243,7 +270,7 @@ nav a:hover nav a:focus {
 }
 
 nav>ul>li>a:visited {
-  color: #4a4a4a;
+  color: #8a8a8a;
 }
 
 .navtoggle li:not(:last-child) {
@@ -273,67 +300,14 @@ nav>ul>li>a:visited {
   padding: 24px 0 0;
 }
 
-/*START BERLIN ANIMATION =========================================*/
-@keyframes color-change {
-  0% {
-    color: #edc655;
-  }
-
-  50% {
-    color: #fcffad;
-  }
-
-  100% {
-    color: #f76414;
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 15s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-/*END BERLIN ANIMATION*=================================/
-
 
 /* START HERO ANIMATION************************/
+
 #hero h1 {
   animation-name: fadeIn;
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-
 #hero h5 {
   animation-name: fadeIn;
   animation-duration: 0.6s;
@@ -352,6 +326,7 @@ nav>ul>li>a:visited {
   animation-timing-function: ease-out;
 }
 
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -364,12 +339,27 @@ nav>ul>li>a:visited {
   }
 }
 
+.come-in {
+  /*transform: translateY(100px);*/
+  transform: translate3d(0, 700px, 0);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  /*transform: translateY(0);*/
+  transform: translate3d(0, 0, 0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translate3d(0, 0, 0); }
+}
+
+
 /*END HERO ANIMATION*=================================/
 
-
-.cloud-back {
-  animation: 30s cloud-move-reverse infinite alternate linear;
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -378,20 +368,19 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 0 0 200px;
-  }
+    }
 
-  works {
-    text-align: unset;
-  }
+    works {
+      text-align: unset;
 
-  .home {
-    max-width: 80%;
-    margin: -150px auto 0;
-  }
+      }
+    .home {
+      max-width: 80%;
+    margin: -150px auto 0;}
 
-  .reverse [class*="col-"] {
-    float: right;
-  }
+.reverse [class*="col-"] {
+  float: right;
+}
 
   .navtoggle.responsive nav {
     padding: 0;
