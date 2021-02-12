@@ -14,7 +14,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
-  }
+}
 
 header {
   background-color: #000000;
@@ -23,7 +23,6 @@ header {
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 footer {
   text-align: center;
@@ -117,7 +116,7 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-    transition: 0.3s;
+  transition: 0.3s;
   text-transform: uppercase;
   transition-duration: 0.2s;
 }
@@ -148,7 +147,6 @@ a.active {
   background-position: center;
 }
 
-
 .icon {
   display: inline-block;
   text-align: left;
@@ -176,6 +174,7 @@ a.active {
   width: 100%;
   border-radius: 10px;
 }
+
 .story .column:last-child {
   align-items: center;
   display: flex;
@@ -197,7 +196,7 @@ a.active {
 #hero h1 {
   text-align: center;
   margin-bottom: 0;
-  }
+}
 
 .home h1 {
   line-height: 1.2;
@@ -340,7 +339,7 @@ nav>ul>li>a:visited {
   animation-timing-function: ease-out;
 }
 
-#hero  {
+#hero {
   animation-name: fadeIn;
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
@@ -364,8 +363,6 @@ nav>ul>li>a:visited {
   animation-timing-function: ease-out;
 }
 
-
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -377,7 +374,6 @@ nav>ul>li>a:visited {
     transform: translateY(0px);
   }
 }
-
 
 /*END HERO ANIMATION*=================================/
 
@@ -393,19 +389,20 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 0 0 15px;
-    }
+  }
 
-    works {
-      text-align: unset;
+  works {
+    text-align: unset;
+  }
 
-      }
-    .home {
-      max-width: 80%;
-    margin: -150px auto 0;}
+  .home {
+    max-width: 80%;
+    margin: -150px auto 0;
+  }
 
-.reverse [class*="col-"] {
-  float: right;
-}
+  .reverse [class*="col-"] {
+    float: right;
+  }
 
   .navtoggle.responsive nav {
     padding: 0;
